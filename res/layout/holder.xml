@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+
+    <ImageView
+        android1:id="@+id/image"
+        android1:layout_width="80dp"
+        android1:layout_height="80dp"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignTop="@+id/sv"
+        android1:src="@drawable/ph" />
+
+    <!-- <HorizontalScrollView
+        
+    
+
+    
+        android1:id="@+id/sv"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignRight="@+id/readmore"
+        android1:layout_centerVertical="true"
+        android1:layout_toRightOf="@+id/image" >
+ -->
+    <!-- </HorizontalScrollView> -->
+
+    <ImageView
+        android1:id="@+id/readmore"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/feedcat"
+        android1:layout_alignParentRight="true"
+        android1:src="@drawable/more" />
+
+    <TextView
+        android1:id="@+id/feedinfo"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignTop="@+id/image"
+        android1:layout_toRightOf="@+id/image"
+        android1:text="Large Text"
+        android1:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android1:id="@+id/feedcat"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/image"
+        android1:layout_toRightOf="@+id/image"
+        android1:text="Small Text"
+        android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
